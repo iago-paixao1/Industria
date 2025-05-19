@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Colaborador - Sistema ERP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colaborador.css"> </head>
+<body>
+    <header>
+        <h1>Área do Colaborador</h1>
+        <nav>
+            <ul>
+                <li><a href="#folha-pagamento">Folha de Pagamento</a></li>
+                <li><a href="#banco-horas">Banco de Horas</a></li>
+                <li><a href="#horas-extras">Horas Extras</a></li>
+                <li><a href="#faltas">Faltas</a></li>
+                <li><a href="#atestados">Atestados</a></li>
+                <li><a href="#ferias">Férias</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="folha-pagamento">
+            <h2>Minha Folha de Pagamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mês/Ano</th>
+                        <th>Salário Bruto</th>
+                        <th>Descontos</th>
+                        <th>Salário Líquido</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maio/2025</td>
+                        <td>R$ 3.000,00</td>
+                        <td>R$ 600,00</td>
+                        <td>R$ 2.400,00</td>
+                        <td><button>Visualizar</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="banco-horas">
+            <h2>Meu Banco de Horas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>Total Trabalhado</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>17/05/2025</td>
+                        <td>08:00</td>
+                        <td>17:00</td>
+                        <td>9:00</td>
+                        <td>+1:00</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="horas-extras">
+            <h2>Solicitar Horas Extras</h2>
+            <form>
+                <label for="data-he">Data:</label>
+                <input type="date" id="data-he" name="data-he" required><br><br>
+                <label for="inicio-he">Início:</label>
+                <input type="time" id="inicio-he" name="inicio-he" required><br><br>
+                <label for="fim-he">Fim:</label>
+                <input type="time" id="fim-he" name="fim-he" required><br><br>
+                <label for="justificativa-he">Justificativa:</label>
+                <textarea id="justificativa-he" name="justificativa-he"></textarea><br><br>
+                <button type="submit">Solicitar</button>
+            </form>
+            <h3>Minhas Solicitações de Horas Extras</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Início</th>
+                        <th>Fim</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15/05/2025</td>
+                        <td>18:00</td>
+                        <td>20:00</td>
+                        <td>Pendente</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="faltas">
+            <h2>Minhas Faltas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Justificativa</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/05/2025</td>
+                        <td>Consulta médica</td>
+                        <td>Aprovada</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="atestados">
+            <h2>Meus Atestados</h2>
+            <form>
+                <label for="data-atestado">Data do Atestado:</label>
+                <input type="date" id="data-atestado" name="data-atestado" required><br><br>
+                <label for="arquivo-atestado">Arquivo:</label>
+                <input type="file" id="arquivo-atestado" name="arquivo-atestado"><br><br>
+                <button type="submit">Enviar Atestado</button>
+            </form>
+            <h3>Meus Atestados Enviados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Arquivo</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0

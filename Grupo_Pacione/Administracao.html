@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa - Sistema ERP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adm.css"> </head>
+<body>
+    <header>
+        <h1>Área Administrativa</h1>
+        <nav>
+            <ul>
+                <li><a href="#cadastro-funcionario">Cadastro de Funcionário</a></li>
+                <li><a href="#folha-pagamento">Folha de Pagamento</a></li>
+                <li><a href="#banco-horas">Banco de Horas</a></li>
+                <li><a href="#producao">Produção</a></li>
+                <li><a href="#estoque">Estoque</a></li>
+                <li><a href="#compras">Compras</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cadastro-funcionario">
+            <h2>Cadastro de Funcionário</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required><br><br>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco"><br><br>
+
+                <label for="estado-civil">Estado Civil:</label>
+                <select id="estado-civil" name="estado-civil">
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select><br><br>
+
+                <label for="filhos">Filhos:</label>
+                <input type="number" id="filhos" name="filhos" min="0"><br><br>
+
+                <label for="funcao">Função:</label>
+                <input type="text" id="funcao" name="funcao"><br><br>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo"><br><br>
+
+                <label for="descricao-cargo">Descrição do Cargo:</label>
+                <textarea id="descricao-cargo" name="descricao-cargo"></textarea><br><br>
+
+                <label for="turno-horario">Turno/Horário:</label>
+                <input type="text" id="turno-horario" name="turno-horario"><br><br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="folha-pagamento">
+            <h2>Folha de Pagamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funcionário</th>
+                        <th>Mês/Ano</th>
+                        <th>Salário Bruto</th>
+                        <th>Descontos</th>
+                        <th>Salário Líquido</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João Silva</td>
+                        <td>Maio/2025</td>
+                        <td>R$ 3.000,00</td>
+                        <td>R$ 600,00</td>
+                        <td>R$ 2.400,00</td>
+                        <td><button>Visualizar</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="banco-horas">
+            <h2>Banco de Horas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funcionário</th>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>Total Trabalhado</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Souza</td>
+                        <td>17/05/2025</td>
+                        <td>08:00</td>
+                        <td>17:00</td>
+                        <td>9:00</td>
+                        <td>+1:00</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="producao">
+            <h2>Área de Produção</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ordem de Produção</th>
+                        <th>Produto</th>
+                        <th>Status</th>
+                        <th>Responsável</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OP001</td>
+                        <td>Produto A</td>
+                        <td>Corte</td>
+                        <td>Carlos Oliveira</td>
+                        <td><button>Detalhes</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="estoque">
+            <h2>Estoque</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parafuso M3</td>
+                        <td>Matéria Prima</td>
+                        <td>1000</td>
+                        <td>Unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Produto A (Finalizado)</td>
+                        <td>Acabado</td>
+                        <td>50</td>
+                        <td>Unidades</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="compras">
+            <h2>Área de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Preço Unitário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item para Compra 1</td>
+                        <td>Descrição do item 1</td>
+                        <td>R$ 10,00</td>
+                        <td><button>Orçamento</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistema ERP</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
